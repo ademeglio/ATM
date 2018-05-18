@@ -2,9 +2,17 @@ WE Can Code IT
 ATM Bridge Project
 5/18/2018 Anthony J. DeMeglio
 
+<<<<<<< HEAD
 # ATM
 ## Objective
 Using TDD, design an 'Atm' class and an 'AtmClientApp' (with a main method) to simulate access and transactions that occur with an ATM (Automatic Teller Machine). The ATM should require the user to enter a 4 digit PIN (Personal Identification Number) to gain access.
+=======
+#ATM#
+
+##Objective
+
+Using TDD, design an **_Atm_** class and an **_AtmClientApp_** (with a **_main_** method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **M**achine.  The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber to gain access.
+>>>>>>> a74776f940301ae6d63488379484a652550ad7cd
 
 ###Tasks
 Complete the following tasks.
@@ -68,6 +76,7 @@ Press 4 to exit.
 Enter a deposit amount
 50
 Updated bal is: 150.0
+<<<<<<< HEAD
 Using TDD to build out this project
 Here are the following asserts that will allow us to build out all of the requirements above through the process of TDD.
 
@@ -77,3 +86,17 @@ a limit on withdraw based on available balance
 an ability to make an accurate deposit
 an ability to allow access by PIN
 an ability to deny access by PIN
+=======
+</code></pre></div></div>
+<h3 id="using-tdd-to-build-out-this-project">Using TDD to build out this project</h3>
+
+<p>Here are the following asserts that will allow us to build out all of the requirements above through the process of TDD.</p>
+<ul>
+  <li>a test for a default balance</li>
+  <li>an ability to withdraw from that default balance</li>
+  <li>a limit on withdraw based on available balance</li>
+  <li>an ability to make an accurate deposit</li>
+  <li>an ability to allow access by PIN</li>
+  <li>an ability to deny access by PIN</li>
+</ul>
+>>>>>>> a74776f940301ae6d63488379484a652550ad7cd
