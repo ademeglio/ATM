@@ -2,47 +2,40 @@ WE Can Code IT
 ATM Bridge Project
 5/18/2018 Anthony J. DeMeglio
 
-<h1 id="atm">ATM</h1>
+#ATM
 
-<h2 id="objective">Objective</h2>
+##Objective
 
-<p>Using TDD, design an <code class="highlighter-rouge">Atm</code> class and an <code class="highlighter-rouge">AtmClientApp</code> (with a <code class="highlighter-rouge">main</code> method) to simulate access and transactions that occur with an ATM (<strong>A</strong>utomatic <strong>T</strong>eller <strong>Machine</strong>).  The ATM should require the user to enter a 4 digit PIN (<strong>P</strong>ersonal <strong>I</strong>dentification <strong>N</strong>umber) to gain access.</p>
+Using TDD, design an **_Atm_** class and an **_AtmClientApp_** (with a **_main_** method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **M**achine.  The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber to gain access.
 
-<h3 id="tasks">Tasks</h3>
+###Tasks
 
-<p>Complete the following tasks.</p>
+Complete the following tasks.
 
-<p>Where these instructions mention prompting the user or displaying information, this should be done via console. Also, all of the console input/output should be done from the <code class="highlighter-rouge">AtmClientApp</code> class.</p>
+Where these instructions mention prompting the user or displaying information, this should be done via console. Also, all of the console input/output should be done from the **_AtmClientApp_** class.
 
-<h4 id="require-a-pin-for-access">Require a PIN for access</h4>
+####Require a PIN for access
 
-<p>Your <code class="highlighter-rouge">Atm</code> class should have:</p>
+Your **Atm** class should have:
 
-<ul>
-  <li>an <em>instance variable</em> of type <code class="highlighter-rouge">String</code> called <code class="highlighter-rouge">requiredPin</code> that holds the PIN required to gain access.</li>
-  <li>a <em>method</em> with the signature <code class="highlighter-rouge">boolean allowAccess(String enteredPin)</code> that checks to see whether a PIN the user entered is valid.</li>
-</ul>
+..*an _instance variable_ of type **String** called **requiredPin** that holds the PIN required to gain access.
+..*a _method_ with the signature **boolean allowAccess(String enteredPin)** that checks to see whether a PIN the user entered is valid.
 
-<p>Your <code class="highlighter-rouge">AtmClientApp</code> class should:</p>
+Your **AtmClientApp** class should:
 
-<ul>
-  <li>create an instance of <code class="highlighter-rouge">Atm</code>.</li>
-  <li>prompt the user for a PIN number via the console.</li>
-  <li>display either a success or failure message based on the PIN the user entered.</li>
-</ul>
+..*create an instance of **Atm**
+..*prompt the user for a PIN number via the console.
+..*display either a success or failure message based on the PIN the user entered.
 
-<h5 id="stretch-task">Stretch Task</h5>
+#####Stretch Task
 
-<ul>
-  <li>Create a <em>constructor</em> that allows the required PIN to be specified during object construction.</li>
-</ul>
+..*Create a _constructor_ that allows the required PIN to be specified during object construction.
 
-<h4 id="allow-deposits">Allow deposits</h4>
+####Allow deposits
 
-<p>Add the following to your <code class="highlighter-rouge">Atm</code> class:</p>
+Add the following to your **_Atm_** class:
 
-<ul>
-  <li>an <em>instance variable</em> of type <code class="highlighter-rouge">double</code> called <code class="highlighter-rouge">balance</code> that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.</li>
+..*an _instance variable_ of type **_double_** called **_balance_** that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
   <li>a <em>method</em> with the signature <code class="highlighter-rouge">void deposit(double amount)</code> that increases the value of <code class="highlighter-rouge">balance</code> by <code class="highlighter-rouge">amount</code>.</li>
 </ul>
 
