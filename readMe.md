@@ -3,6 +3,7 @@ ATM Bridge Project
 5/18/2018 Anthony J. DeMeglio
 
 # ATM
+======
 ## Objective
 Using TDD, design an `Atm` class and an `AtmClientApp` (with a `main` method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **M**achine). The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber) to gain access.
 
@@ -44,27 +45,35 @@ Add the following to your `AtmClientApp` class (these are all predicated on the 
   * display the current account balance.
 
 ##### Stretch Task.
-add the beginning balance to the Atm constructor.
-use java.math.BigDecimal to store balance instead of double.
-Allow withdrawals
-Add the following to your Atm class:
+  * add the beginning balance to the Atm constructor.
+  * use java.math.BigDecimal to store balance instead of double.
 
-a method with the signature void withdraw(double amount) that decreases the value of balance by amount.
-Update your AtmClientApp to:
+#### Allow withdrawals
 
-offer a Press 2 to withdraw funds option.
-prompt the user for a withdrawal amount.
-call the withdraw method with the specified amount.
-Allow balance inquiries.
-Update your AtmClientApp to:
+Add the following to your `Atm` class:
 
-offer a Press 3 to check balance option.
-display the current balance when this option is chosen.
-Input loop
-Update your AtmClientApp, adding a Press 4 to exit option. Keep prompting the user to select an option until they enter 4 to exit, then print a goodbye message.
+  * a method with the signature void withdraw(double amount) that decreases the value of balance by amount.
 
-Examples
-Enter your PIN: 
+Update your `AtmClientApp` to:
+
+  * offer a `Press 2 to withdraw funds` option.
+  * prompt the user for a withdrawal amount.
+  * call the `withdraw` method with the specified amount.
+
+#### Allow balance inquiries.
+
+Update your `AtmClientApp` to:
+
+  * offer a `Press 3 to check balance` option.
+  * display the current balance when this option is chosen.
+
+#### Input loop
+
+Update your `AtmClientApp`, adding a `Press 4 to exit` option. Keep prompting the user to select an option until they enter `4` to exit, then print a goodbye message.
+
+## Examples
+
+`Enter your PIN: 
 1234
 Welcome to Bank of We Can Code IT!
 Choose an option.
@@ -75,13 +84,14 @@ Press 4 to exit.
 1
 Enter a deposit amount
 50
-Updated bal is: 150.0
-Using TDD to build out this project
+Updated bal is: 150.0`
+
+### Using TDD to build out this project
+----------------------------------------
 Here are the following asserts that will allow us to build out all of the requirements above through the process of TDD.
 
-a test for a default balance
-an ability to withdraw from that default balance
-a limit on withdraw based on available balance
-an ability to make an accurate deposit
-an ability to allow access by PIN
-an ability to deny access by PIN
+  *an ability to withdraw from that default balance
+  *a limit on withdraw based on available balance
+  *an ability to make an accurate deposit
+  *an ability to allow access by PIN
+  *an ability to deny access by PIN
