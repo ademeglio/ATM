@@ -73,7 +73,8 @@ Update your `AtmClientApp`, adding a `Press 4 to exit` option. Keep prompting th
 
 ## Examples
 
-`Enter your PIN: 
+```
+Enter your PIN: 
 1234
 Welcome to Bank of We Can Code IT!
 Choose an option.
@@ -84,7 +85,8 @@ Press 4 to exit.
 1
 Enter a deposit amount
 50
-Updated bal is: 150.0`
+Updated bal is: 150.0
+```
 
 ### Using TDD to build out this project
 
