@@ -32,16 +32,16 @@ Your `AtmClientApp` class should:
 
 Add the following to your `Atm` class:
 
-...* an *instance variable* of type `double` called `balance` that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
-...* a *method* with the signature `void deposit(double amount)` that increases the value of `balance` by `amount`.
+..* an *instance variable* of type `double` called `balance` that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
+..* a *method* with the signature `void deposit(double amount)` that increases the value of `balance` by `amount`.
 
 Add the following to your `AtmClientApp` class (these are all predicated on the user having entered the correct PIN):
 
-...* display a menu, with only one option for now: `Press 1 to deposit funds`.
-...* prompt the user to select an option. So long as she selects anything other than `1`, redisplay the menu.
-...* prompt the user for a deposit amount.
-...* call the `deposit` method on `Atm` to deposit the amount specified.
-...* display the current account balance.
+..* display a menu, with only one option for now: `Press 1 to deposit funds`.
+..* prompt the user to select an option. So long as she selects anything other than `1`, redisplay the menu.
+..* prompt the user for a deposit amount.
+..* call the `deposit` method on `Atm` to deposit the amount specified.
+..* display the current account balance.
 
 ##### Stretch Task.
 add the beginning balance to the Atm constructor.
