@@ -3,7 +3,7 @@ ATM Bridge Project
 5/18/2018 Anthony J. DeMeglio
 
 # ATM
-======
+
 ## Objective
 Using TDD, design an `Atm` class and an `AtmClientApp` (with a `main` method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **M**achine). The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber) to gain access.
 
@@ -87,7 +87,7 @@ Enter a deposit amount
 Updated bal is: 150.0`
 
 ### Using TDD to build out this project
-----------------------------------------
+
 Here are the following asserts that will allow us to build out all of the requirements above through the process of TDD.
 
   *an ability to withdraw from that default balance
