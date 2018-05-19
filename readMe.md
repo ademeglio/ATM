@@ -15,33 +15,33 @@ Where these instructions mention prompting the user or displaying information, t
 #### Require a PIN for access
 Your `Atm` class should have:
 
-..* an *instance variable* of type `String` called `requiredPin` that holds the PIN required to gain access.
-..* a *method* with the signature `boolean allowAccess(String enteredPin)` that checks to see whether a PIN the user entered is valid.
+  * an *instance variable* of type `String` called `requiredPin` that holds the PIN required to gain access.
+  * a *method* with the signature `boolean allowAccess(String enteredPin)` that checks to see whether a PIN the user entered is valid.
 
 Your `AtmClientApp` class should:
 
-..* create an instance of `Atm`.
-..* prompt the user for a PIN number via the console.
-..* display either a success or failure message based on the PIN the user entered.
+  * create an instance of `Atm`.
+  * prompt the user for a PIN number via the console.
+  * display either a success or failure message based on the PIN the user entered.
 
 ##### Stretch Task
 
-..* Create a *constructor* that allows the required PIN to be specified during object construction.
+  * Create a *constructor* that allows the required PIN to be specified during object construction.
 
 #### Allow deposits
 
 Add the following to your `Atm` class:
 
-..* an *instance variable* of type `double` called `balance` that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
-..* a *method* with the signature `void deposit(double amount)` that increases the value of `balance` by `amount`.
+  * an *instance variable* of type `double` called `balance` that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
+  * a *method* with the signature `void deposit(double amount)` that increases the value of `balance` by `amount`.
 
 Add the following to your `AtmClientApp` class (these are all predicated on the user having entered the correct PIN):
 
-..* display a menu, with only one option for now: `Press 1 to deposit funds`.
-..* prompt the user to select an option. So long as she selects anything other than `1`, redisplay the menu.
-..* prompt the user for a deposit amount.
-..* call the `deposit` method on `Atm` to deposit the amount specified.
-..* display the current account balance.
+  * display a menu, with only one option for now: `Press 1 to deposit funds`.
+  * prompt the user to select an option. So long as she selects anything other than `1`, redisplay the menu.
+  * prompt the user for a deposit amount.
+  * call the `deposit` method on `Atm` to deposit the amount specified.
+  * display the current account balance.
 
 ##### Stretch Task.
 add the beginning balance to the Atm constructor.
