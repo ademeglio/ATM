@@ -4,26 +4,31 @@ ATM Bridge Project
 
 # ATM
 ## Objective
-Using TDD, design an 'Atm' class and an 'AtmClientApp' (with a main method) to simulate access and transactions that occur with an ATM (Automatic Teller Machine). The ATM should require the user to enter a 4 digit PIN (Personal Identification Number) to gain access.
+Using TDD, design an `Atm` class and an `AtmClientApp` (with a `main` method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **M**achine). The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber) to gain access.
 
-###Tasks
+### Tasks
+
 Complete the following tasks.
 
-Where these instructions mention prompting the user or displaying information, this should be done via console. Also, all of the console input/output should be done from the AtmClientApp class.
+Where these instructions mention prompting the user or displaying information, this should be done via console. Also, all of the console input/output should be done from the `AtmClientApp` class.
 
-Require a PIN for access
-Your Atm class should have:
+#### Require a PIN for access
+Your `Atm` class should have:
 
-an instance variable of type String called requiredPin that holds the PIN required to gain access.
-a method with the signature boolean allowAccess(String enteredPin) that checks to see whether a PIN the user entered is valid.
-Your AtmClientApp class should:
+..an *instance variable* of type `String` called `requiredPin` that holds the PIN required to gain access.
+..a *method* with the signature `boolean allowAccess(String enteredPin)` that checks to see whether a PIN the user entered is valid.
 
-create an instance of Atm.
-prompt the user for a PIN number via the console.
-display either a success or failure message based on the PIN the user entered.
-Stretch Task
-Create a constructor that allows the required PIN to be specified during object construction.
-Allow deposits
+Your `AtmClientApp` class should:
+
+..create an instance of `Atm`.
+..prompt the user for a PIN number via the console.
+..display either a success or failure message based on the PIN the user entered.
+
+##### Stretch Task
+
+.. Create a *constructor* that allows the required PIN to be specified during object construction.
+
+#### Allow deposits
 Add the following to your Atm class:
 
 an instance variable of type double called balance that stores the user’s account balance. Feel free to initialize this with an arbitrary beginning balance.
